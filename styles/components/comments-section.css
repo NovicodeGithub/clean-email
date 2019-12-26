@@ -107,6 +107,7 @@
 
     .comments-section .comment-item:nth-child(2n-1) {
         margin-right: -12px;
+        margin-left: auto;
         animation-name: fadeInLeft;
     }
 }
