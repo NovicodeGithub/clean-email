@@ -102,12 +102,14 @@
 
     .comments-section .comment-item:nth-child(2n) {
         margin-left: -12px;
+        margin-right: auto;
         animation-name: fadeInRight;
     }
 
     .comments-section .comment-item:nth-child(2n-1) {
-        margin-right: -12px;
-        margin-left: auto;
+        margin-right: -12px !important;
+        display: block;
+        margin-left: auto !important;
         animation-name: fadeInLeft;
     }
 }
