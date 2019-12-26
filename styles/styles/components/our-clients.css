@@ -1,0 +1,36 @@
+.our-clients-section {
+    display: block;
+    width: 100%;
+    padding: 48px 0;
+    box-sizing: border-box;
+    text-align: center;
+    background: #E6F1FC;
+}
+
+.our-clients-section img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.our-clients-section img + img {
+    margin-left: 8%;
+}
+
+@media screen and (max-width: 768px) {
+    .our-clients-section img {
+        height: 4vw;
+        width: auto;
+        padding: 0 3%;
+    }
+
+    .our-clients-section img + img{
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 592px) {
+    .our-clients-section img {
+        height: 4.6vw;
+        padding: 0 1%;
+    }
+}

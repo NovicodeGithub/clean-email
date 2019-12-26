@@ -1,0 +1,129 @@
+.app-features-section {
+    display: block;
+    width: 100%;
+    padding: 72px 0 12px 0;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, #FFFFFF 0%, #F5F8FE 100%);
+    overflow: hidden;
+}
+
+.app-features-section .features-list {
+    display: block;
+    width: auto;
+    max-width: 800px;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.app-features-section .feature-item {
+    display: inline-flex;
+    flex-direction: row;
+    margin: 0 0 60px;
+}
+
+.app-features-section .feature-image {
+    width: 264px;
+    max-width: initial;
+    height: 132px;
+}
+
+.app-features-section .feature-item:nth-child(2n) .feature-image {
+    order: 2;
+}
+
+.app-features-section .feature-item:nth-child(2n-1) .text-wrapper {
+    margin-left: 100px;
+}
+
+.app-features-section .feature-item:nth-child(2n) .text-wrapper {
+    margin-right: 100px;
+    order: 1;
+}
+
+.app-features-section .feature-image , .app-features-section .text-wrapper {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.app-features-section .text-wrapper {
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.app-features-section h3 {
+    display: block;
+    width: 100%;
+    margin-bottom: 16px;
+    max-width: 340px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.583;
+    color: #333;
+}
+
+.app-features-section .feature-description {
+    display: block;
+    width: 340px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.625;
+    color: #333;
+}
+
+@media screen and (max-width: 992px) {
+    .app-features-section .feature-item .feature-image {
+        display: block;
+        margin: 0 auto 32px;
+        height: auto;
+    }
+
+    .app-features-section .feature-item {
+        width: 100%;
+        display: block;
+    }
+
+    .app-features-section .feature-item .text-wrapper {
+        display: block;
+        width: 100%;
+        margin: 0 auto 48px;
+        text-align: center;
+    }
+
+    .app-features-section .feature-description {
+        display: block;
+        margin-left: 0;
+        width: 100%;
+        max-width: 340px;
+    }
+
+    .app-features-section .feature-item:last-child {
+        margin-bottom: 0;
+    }
+
+    .app-features-section .feature-item:last-child .text-wrapper {
+        margin-bottom: 0 !important;
+    }
+
+    .app-features-section .feature-item h3, .app-features-section .feature-item span {
+        display: block;
+        margin: 0 auto 0.667em;
+    }
+
+    .app-features-section .feature-item:nth-child(2n-1) .text-wrapper {
+        margin-left: 0;
+    }
+
+
+    .app-features-section {
+        box-sizing: border-box;
+        padding: 72px 0 48px 0;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .app-features-section .feature-item .feature-image {
+        max-width: 100%;
+    }
+}
