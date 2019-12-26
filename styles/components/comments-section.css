@@ -101,15 +101,21 @@
     }
 
     .comments-section .comment-item:nth-child(2n) {
-        margin-left: -12px;
+        max-width: calc(100% - 12px);
+        padding-left: 20px;
+        margin-left: 0;
         margin-right: auto;
+        border-radius: 0 12px 12px 0;
         animation-name: fadeInRight;
     }
 
     .comments-section .comment-item:nth-child(2n-1) {
-        margin-right: -12px !important;
+        max-width: calc(100% - 12px);
         display: block;
-        margin-left: auto !important;
+        margin-right: 0;
+        padding-right: 20px;
+        border-radius: 12px 0 0 12px;
+        margin-left: auto;
         animation-name: fadeInLeft;
     }
 }
