@@ -1,0 +1,26 @@
+.page-header {
+    display: block;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 24px 170px;
+    box-sizing: border-box;
+}
+
+.page-header .logo {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.page-header .logo img {
+    display: block;
+}
+
+@media screen and (max-width: 992px) {
+    .page-header {
+        padding: 24px 0;
+        text-align: center;
+    }
+}

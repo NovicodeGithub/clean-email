@@ -1,0 +1,20 @@
+.submit-button {
+    display: inline-block;
+    vertical-align: middle;
+    background: var(--primary-blue);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.375;
+    padding: 0.688em 1.625em 0.813em;
+    box-sizing: border-box;
+    border-radius: 0.188em;
+    color: #fff;
+    /* box-shadow: 0; */
+    border: 1px solid #4A99DE;
+    transition: opacity 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.submit-button:hover {
+    opacity: 0.9;
+    transform: translateY(1px);
+}

@@ -1,0 +1,28 @@
+.input-field input {
+    display: inline-block;
+    vertical-align: middle;
+    background: #FFFFFF;
+    border: 1px solid #63AFF1;
+    box-sizing: border-box;
+    box-shadow: none;
+    border-radius: 3px;
+    max-width: 206px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.375;
+    padding: 0.688em 1.625em 0.813em 1em;
+    font-weight: normal;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #C4C4C4;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #C4C4C4;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #C4C4C4;
+}

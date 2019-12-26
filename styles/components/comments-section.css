@@ -1,0 +1,112 @@
+.comments-section {
+    display: block;
+    width: 100%;
+    padding: 72px 0 96px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.comments-wrapper {
+    display: block;
+    width: auto;
+    text-align: right;
+}
+
+.comments-section .comment-item {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 400px;
+    width: 100%;
+    padding: 24px 32px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 60px #E1E5EC;
+    text-align: left;
+    border-radius: 12px;
+    line-height: 1.625;
+    font-size: 16px;
+    margin: 0 1% 30px;
+}
+
+.comments-section .comment-item:last-child {
+    margin-right: -14px;
+}
+
+.comments-section .comment-item:nth-child(2) {
+    margin-top: -52px;
+    box-shadow: 0px 20px 40px #E1E5EC;
+    box-shadow: 0px 0px 20px #E1E5EC;
+}
+
+.comments-section h4 {
+    font-size: 20px;
+    line-height: 1.6;
+    font-weight: bold;
+    margin-bottom: 0.6em;
+}
+
+.comments-section .comment-author {
+    color: #B4BCC7;
+}
+
+.comments-section .comment-rating {
+    float: right;
+    width: auto;
+    display: block;
+    padding-top: 0;
+}
+
+.comments-section .total-number {
+    color: #B4BCC7;
+    margin-left: 2px;
+}
+
+@media screen and (max-width: 1285px) {
+    .comments-section .comment-item:last-child {
+        margin-right: initial;
+    }
+
+    .comments-wrapper {
+        text-align: center;
+    }
+
+    .comments-section .comment-item:last-child {
+        margin-right: 1%;
+    }
+
+    .comments-section .comment-item:nth-child(2) {
+        margin-top: 0;
+        box-shadow: 0px 0px 60px #E1E5EC;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .comments-section {
+        overflow: initial;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .comments-section .comments-wrapper {
+        padding-top: 50px;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 837px) {
+    .comments-section .comment-item {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 48px;
+    }
+
+    .comments-section .comment-item:nth-child(2n) {
+        margin-left: -12px;
+        animation-name: fadeInRight;
+    }
+
+    .comments-section .comment-item:nth-child(2n-1) {
+        margin-right: -12px;
+        animation-name: fadeInLeft;
+    }
+}
